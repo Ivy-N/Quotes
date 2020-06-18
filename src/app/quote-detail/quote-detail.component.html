@@ -1,0 +1,8 @@
+<p>
+  {{quote.quoteauthor}}
+</p>
+<button (click)= 'quoteViewed(true)'>Viewed</button>
+
+<p>This quote was submitted on {{quote.submitDate|dateCount}} days</p>
+
+<button (click)= 'quoteViewed(true)' class="btn btn-outline-danger">Delete Quote</button>

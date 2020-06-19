@@ -23,7 +23,7 @@
       <div class="form-group">
 
         <label for="quotesubmitter">Quote Submitter</label>
-          <input type='text' id="quotesubmitter" [(ngModel)]="newQuote.submitDate" name="quotesubmitter" #quotesubmitter="ngModel" required>
+        <textarea class="form-control" id="quotesubmitter" rows="4" [(ngModel)]="newQuote.quotesubmitter" name="quotesubmitter" #quotesubmitter="ngModel" required></textarea>
           <div [hidden]="quotesubmitter.valid || quotesubmitter.pristine" class="alert alert-danger">
             <p>Quote Submitter is required</p>
           </div>

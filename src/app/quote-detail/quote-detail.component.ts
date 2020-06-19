@@ -8,6 +8,13 @@ import { Quote } from '../quote';
 })
 export class QuoteDetailComponent implements OnInit {
 
+  sortBy = 'name';
+
+  updateSort(sort) {
+    this.sortBy = sort;
+  }
+
+
   @Input() quote: Quote;
   @Output() isViewed = new EventEmitter<boolean>();
 

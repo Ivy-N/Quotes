@@ -3,6 +3,10 @@
 </p>
 <button (click)= 'quoteViewed(true)'>Viewed</button>
 
-<p>This quote was submitted on {{quote.submitDate|dateCount}} days</p>
+<p>This quote was submitted {{quote.submitDate|dateCount}} days ago</p>
 
 <button (click)= 'quoteViewed(true)' class="btn btn-outline-danger">Delete Quote</button>
+
+        <div class="btn-group btn-group-sm filter-by">
+          <button class="btn btn-default" [class.active]="sortBy === 'votes'" (click)="updateSort('votes')">Upvote</button>
+        </div>
